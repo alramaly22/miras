@@ -1001,6 +1001,7 @@ video {
     overflow: initial;
 }
 .projects__content{
+  text-align: center;
     display: grid;
     justify-content: center;
 }
@@ -1047,11 +1048,11 @@ content: '';
 }
 .projects__container .swiper-button-prev{
     left: -1rem;
-    top: 4.5rem;
+    top: 21.5rem;
 }
 .projects__container .swiper-button-next{
     right: -1rem;
-    top: 4.5rem;
+    top: 21.5rem;
 }
 .projects__container .swiper-slide{
     margin-bottom: 4.5rem;
@@ -1756,10 +1757,10 @@ color: rebeccapurple;
     font-size: 3rem;
   }
   .projects__container .swiper-button-prev{
-    left: -1rem;
+    left: 1rem;
   }
   .projects__container .swiper-button-next{
-    right: -1rem;
+    right: 1rem;
   }
   .projects__container .swiper-slide{
     margin-bottom: 6.5rem;
@@ -2099,4 +2100,13 @@ body.dark-theme main {
   
   /* خلفية لوضع الفاتح */
 
+}
+
+#preloader{
+  background: #000000 url(../images/Infinity-1s-200px\ \(1\).gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
 }
