@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/LOGO.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/master.css"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/mira.css">
+
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    #language-selector {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background-color: #3498db; */
+        background: url(./svg/world-svgrepo-com\ \(3\).svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+        color: #fff;
+        border: none;
+        padding:10px;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #language-selector option {
+        color: #000;
+    }
+        </style>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MiraSpor</title>
+</head>
+<body>
+    <!--=============== header=================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <img style="width: 100px;" src="images/LOGO.png" alt="">
+            </a>
+            
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#home" class="nav__link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link active-link">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span>About</span>
+                        </a>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#Course" class="nav__link">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Course</span>
+                        </a>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#pricing" class="nav__link">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>Pricing</span>
+                        </a>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#transformation" class="nav__link">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <span>Transformation</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <select  name="" id="language-selector">
+                    <i class="fa-solid fa-earth-oceania"></i>
+                    <option value="en" selected>En</option>
+                    <option value="ar">Ar</option>
+                </select>
+                                <!-- <i class="fa-solid fa-user login-button" id="login-button"></i> -->
+                <!-- theme button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="search" id="search-content">
+        <form action="" class="search__form">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="search" placeholder="search" class="search__input">
+        </form>
+        <i class="fa-solid fa-xmark search__close" id="search-close"></i>
+    </div>
+
+
+    <!-- login -->
+    <div class="login grid" id="login-content">
+        <form  action="" class="login__form " id="msform">
+            <ul id="progressbar">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Question 1</h2>
+                <h3 class="fs-subtitle">What do you consider your main strengths to be?</h3>
+            <!--<p class="help-block">List your strengths here.</p>-->
+            <textarea class="form-control" name="CAT_Custom_1" id="CAT_Custom_1" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="next" class="next button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 2</h2>
+                <h3 class="fs-subtitle">What do your colleagues consider your main strengths to be?</h3>
+        <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous button" value="Previous" />
+                <input type="button" name="next" class="next button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 3</h2>
+                <h3 class="fs-subtitle">What have been your main achievements?</h3>
+        <textarea class="form-control" name="CAT_Custom_3" id="CAT_Custom_3" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous button" value="Previous" />
+                <input type="button" name="next" class="next button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 4</h2>
+                <h3 class="fs-subtitle">What do you consider your main weaknesses to be?</h3>
+        <textarea class="form-control" name="CAT_Custom_4" id="CAT_Custom_4" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 5</h2>
+                <h3 class="fs-subtitle">What do your colleagues consider your main weaknesses to be?</h3>
+        <textarea class="form-control" name="CAT_Custom_5" id="CAT_Custom_5" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 6</h2>
+                <h3 class="fs-subtitle">In what areas would you like to improve your clinical skills?</h3>
+        <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 7</h2>
+                <h3 class="fs-subtitle">In what areas would you like to improve your non-clinical skills?</h3>
+        <textarea class="form-control" name="CAT_Custom_7" id="CAT_Custom_7" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 8</h2>
+                <h3 class="fs-subtitle">Are there any specific areas of compliance training that you need to complete?</h3>
+        <textarea class="form-control" name="CAT_Custom_8" id="CAT_Custom_8" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 9</h2>
+                <h3 class="fs-subtitle">What postgraduate qualifications do you hold?</h3>
+        <textarea class="form-control" name="CAT_Custom_9" id="CAT_Custom_9" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Question 10</h2>
+                <h3 class="fs-subtitle">What postgraduate qualifications or training do you wish to obtain?</h3>
+        <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+        </form>
+        <i class="fa-solid fa-xmark login__close" id="login-close"></i>
+    </div>
+
+
+
+
+    <main class="main">
+      <!--====================Home====================-->
+      <section class="home2" id="home2">
+      <div class="home2__container container">
+        <div class="home2__data">
+            <div class="home2__content">
+                <div class="home__stars">
+                    <i class="fa-solid fa-medal"></i>
+                    <i class="fa-solid fa-medal"></i>
+                    <i class="fa-solid fa-medal"></i>
+                    <i class="fa-solid fa-medal"></i>
+                    <i class="fa-solid fa-medal"></i>
+
+                </div>
+                <h1 class="home2__title">
+                    Do It For You <br>
+                    I Will Help You<br>
+                    To Be Stronger
+                </h1>
+                <!-- <h3 class="home__price">
+                    $620
+                </h3> -->
+            </div>
+            <a style="padding: 1rem 7rem;" href="#" class="button">
+                Get Start<i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="home2__images">
+            <div style="margin-inline: initial;" class="home__swiper swiper">
+                <div class="swiper-wrapper">
+                    <article style="text-align: center;" class="homee2__article swiper-slide">
+                        <img src="images/IMG_3405_19_11zon.webp" alt="" class="home2__img">
+                    </article>
+                    <article style="text-align: center;" class="homee2__article swiper-slide">
+                        <img src="images/IMG_3400_14_11zon.webp" alt="" class="home2__img">
+                    </article>
+                    <article style="text-align: center;" class="homee2__article swiper-slide">
+                        <img src="images/IMG_3401_15_11zon.webp" alt="" class="home2__img">
+                    </article>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="home2__info">
+            <img src="images/AnyConv.com__IMG_0729.png" alt="" class="home2__info-img">
+            <div class="home2__info-contect">
+                <p class="hpme2__info-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente earum adipisci, mollitia impedit necessitatibus debitis veniam numquam voluptatum soluta dolore a! Eos quidem unde itaque tenetur et non soluta!
+                </p>
+            </div>
+        </div> -->
+      </div>
+    </section>
+
+
+
+
+
+
+
+      <!--==================== ABOUT ====================-->
+      <section class="section about " id="about" data-aos="fade-left">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title">About MiraSpor</h2>
+                <p class="about__description">I used to suffer from eating disorders, I used to struggle with my body image and hate my body and myself. When I was younger I used to be bullied so my confidence used to be very low. I used to hate anyone who wanted to take pictures of myself and I never liked cameras! I used to be very timid and nerdy. When I started the gym, I wasn’t doing it to look in a certain way, I was doing it to completely transform myself, become more confident, feel stronger and powerful.
+                </p>
+                <!-- <a href="#" class="button">Know more <i class="fa-solid fa-arrow-right"></i></a> -->
+            </div>
+
+            <img style="border-radius: 15rem;" src="images/IMG_0101_29_11zon.webp" alt="" class="about__img">
+        </div>
+    </section>
+
+
+
+      <!--==================== project ====================-->
+<!-- <section class="projects section" id="projects">
+    <h2 class="section__title">projects</h2>
+    <spac class="section__subtitle">most recent works</spac>
+
+<div class="container section__border">
+    <div class="projects__container swiper">
+        <div class="swiper-wrapper">
+            <div class="projects__content swiper-slide">
+                <iframe width="560" height="315" class="projects__img" src="https://www.youtube.com/embed/9UaOYqtUGP0?si=oxa3jHMrRJVpHmt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+                <span class="projects__subtitle">web</span>
+                <h1 class="projects__title">MOdern website</h1>
+                <a href="#" class="projects__button button">
+                    Get Start <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            </div>
+            <div class="projects__content swiper-slide">
+                <iframe width="560" height="315" class="projects__img" src="https://www.youtube.com/embed/9UaOYqtUGP0?si=oxa3jHMrRJVpHmt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div>
+                <span class="projects__subtitle">web</span>
+                <h1 class="projects__title">Ecommerce Store</h1>
+                <a href="#" class="projects__button button">
+                    Get Start <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            </div>
+            <div class="projects__content swiper-slide">
+                <iframe width="560" height="315" class="projects__img" src="https://www.youtube.com/embed/9UaOYqtUGP0?si=oxa3jHMrRJVpHmt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <div>
+                <span class="projects__subtitle">web</span>
+                <h1 class="projects__title">Ecommerce Store</h1>
+                <a href="#" class="projects__button button">
+                    Get Start <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            </div>
+            <div class="projects__content swiper-slide">
+           
+                <iframe width="560" height="315" class="projects__img" src="https://www.youtube.com/embed/9UaOYqtUGP0?si=oxa3jHMrRJVpHmt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div>
+                <span class="projects__subtitle">web</span>
+                <h1 class="projects__title">Ecommerce Store</h1>
+                <a href="#" class="projects__button button">
+                    Get Start <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</section> -->
+
+
+
+            <!--==================== FAQ ====================-->
+            <section class="questions section" id="faqs" data-aos="fade-right">
+                <h2 data-lang="questionh2" class=" section__title">
+                    Why Choose MiraSpor?
+                </h2>
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q1" class="questions__item-title">
+                                    How can Mira Sporr help me transform my body?
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a1" class="questions__description">
+                                    Mira Sporr leverages her expertise to guide and support you in achieving a transformative body. Her proven methods focus not only on physical changes but also on enhancing overall well-being.
+
+                                                                  </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q2" class="questions__item-title">
+                                    What sets MiraSpor apart in fitness coaching?
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a2" class="questions__description">
+                                    Mira Sporr's approach goes beyond physical training. She understands the mental and emotional aspects of fitness, creating a supportive environment for clients. Her coaching not only transforms bodies but also empowers individuals to lead more fulfilling lives.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header  class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q3" class="questions__item-title">
+                                    How does MiraSpor tailor fitness plans to individual needs?
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a3" class="questions__description">
+                                    Mira Sporr understands that every individual is unique. She customizes fitness plans to your specific needs, considering factors such as fitness level, health conditions, and personal goals, ensuring a personalized and effective approach.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q4" class="questions__item-title">
+                                    How does MiraSpor address mental barriers in fitness journeys?
+
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a4" class="questions__description">
+                                    Mira Sporr goes beyond physical training by addressing mental barriers. Her coaching incorporates strategies to overcome self-doubt, instill confidence, and create a positive mindset for a holistic and lasting transformation.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q5" class="questions__item-title">
+                                    What support does MiraSpor provide for nutritional guidance?
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a5" class="questions__description">
+                                    Mira Sporr understands the importance of nutrition in achieving fitness goals. She offers comprehensive nutritional guidance, helping you make informed choices to fuel your body optimally and complement your fitness journey.
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q6" class="questions__item-title">
+                                    How does MiraSpor create a supportive fitness community?
+
+                                                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a6" class="questions__description">
+                                    Mira Sporr fosters a supportive fitness community by encouraging regular interactions among clients. She facilitates group activities, provides a platform for shared achievements, and promotes a positive environment where individuals motivate and inspire each other throughout their fitness journeys.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q7" class="questions__item-title">
+                                    How does MiraSpor keep her fitness programs engaging and enjoyable?
+
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a7" class="questions__description">
+                                    Mira Sporr designs dynamic and enjoyable fitness programs by incorporating a variety of exercises, routines, and challenges. She believes that keeping workouts fun and diverse not only enhances physical results but also ensures that clients stay motivated and excited about their fitness journey.
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q8" class="questions__item-title">
+                                    What role does mindset play in MiraSpor's coaching philosophy?
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a8" class="questions__description">
+                                    Mira Sporr places a significant emphasis on mindset in her coaching philosophy. She believes that a positive and resilient mindset is crucial for overcoming challenges, staying consistent, and achieving long-term success in fitness. Her coaching includes strategies to cultivate a mindset that supports personal growth and well-being.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q9" class="questions__item-title">
+                                    How does MiraSpor adapt her programs to cater to different fitness levels?
+
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a9" class="questions__description">
+                                    Mira Sporr customizes her fitness programs to accommodate various fitness levels. Whether you're a beginner or an experienced athlete, Mira tailors exercises and intensity levels to ensure that each individual can progress at their own pace, fostering an inclusive and supportive fitness community.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="fa-solid fa-plus questions__icon"></i>
+                                <h3 data-lang="q10" class="questions__item-title">
+                                    What ongoing support does MiraSpor provide to her clients after program completion?
+                                </h3>
+                               
+                            </header>
+                            <div class="questions__content">
+                                <p data-lang="a10" class="questions__description">
+                                    Mira Sporr's commitment extends beyond program completion. She offers ongoing support through post-program resources, follow-up consultations, and a community platform where clients can continue to connect, share experiences, and receive guidance, ensuring a sustained and positive impact on their fitness and well-being.
+                                                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- <a data-lang="subscr" href="pricing.html" class="pricing__button" >Join now</a> -->
+
+                </div>
+            </section>
+
+           <!--==================== POPULAR ====================-->
+           <section class="testimonial section" id="testimonial" data-aos="fade-left">
+            <span class="section__subtitle">Clients' Feedback</span>
+            <h2 class="section__title">Testimonials</h2>
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="images/client1_2_11zon.webp" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Sarah Johnson</h3>
+                        <p class="testimonial__description">Joining was a game-changer! Achieved fitness goals with personalized guidance and remarkable trainer support. The encouraging community made sharing my journey truly rewarding.</p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="images/client3_3_11zon.webp" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Alex Rodriguez</h3>
+                        <p class="testimonial__description">Transformative experience with great trainers. Your story matters here. Join, share, and let's empower each other!</p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="images/feed4_4_11zon.webp" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Emily Thompson</h3>
+                        <p class="testimonial__description">One of the best decisions. Unparalleled support and inspiration. Don't miss out—join us and share your achievements!</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+
+   <!--==================== Form 2====================-->
+   <section class="contact section" id="contact">
+    <!-- <span class="section__title">Get In Touch</span> -->
+    <h2 style="color: white;" class="section__title">Contact Me</h2>
+
+    <div class="contact__container container grid" data-aos="fade-right">
+        <div style="display: none;" class="contact__content">
+            <h3 class="conact__title">Talk to me</h3>
+            <div class="contact__info">
+                <div class="contact__card">
+                    <i class="fa-regular fa-circle-check contact__card-icon"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">user@gmail.com</span>
+                    <a href="#" target="_blank" class="contact__button">
+                        write me<i class="fa-solid fa-angle-right contact__button-icon"></i>
+                    </a>
+                </div>
+                <div class="contact__card">
+                    <i class="fa-regular fa-circle-check contact__card-icon"></i>
+                    <h3 class="contact__card-title">Whatsapp</h3>
+                    <span class="contact__card-data">0124895</span>
+                    <a href="#" target="_blank" class="contact__button">
+                        write me<i class="fa-solid fa-angle-right contact__button-icon"></i>
+                    </a>
+                </div>
+                <div class="contact__card">
+                    <i class="fa-regular fa-circle-check contact__card-icon"></i>
+                    <h3 class="contact__card-title">Messenger</h3>
+                    <span class="contact__card-data">user@gmail.com</span>
+                    <a href="#" target="_blank" class="contact__button">
+                        write me<i class="fa-solid fa-angle-right contact__button-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact__content">
+            <h3 style="color: white;" class="conact__title">Write me your Questions</h3>
+            <form action="" class="contact__form">
+                <div class="contact__form-div">
+                    <label for="" class="contact__form-tag">Names</label>
+                    <input type="text" placeholder="Insert Your Name" name="" id="" class="contact__form-input">
+                </div>
+                <div class="contact__form-div">
+                    <label for="" class="contact__form-tag">Mail</label>
+                    <input type="email" placeholder="Insert Your email" name="" id="" class="contact__form-input">
+                </div>
+                <div class="contact__form-div contact__form-area">
+                    <label for="" class="contact__form-tag">Project</label>
+<textarea name="" id="" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input"></textarea>
+                </div>
+
+                <button class="button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+          <!--==================== Footer ====================-->
+<footer class="footer" data-aos="fade-right">
+    <div class="footer__container container grid">
+        <div class="footer__content grid">
+            <div>
+                <a href="#" class="footer__logo"><img style="width: 50%;" src="images/LOGO.png" alt=""></a>
+                <p class="footer__description">
+                    Do It For You <br>
+                    I Will Help You<br>
+                    To Be Stronger
+                </p>
+            </div>
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">Links</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a data-lang="footera4" href="mira.html#Home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a data-lang="footera5" href="mira.html#Course" class="footer__link">Courses</a>
+                        </li>
+                        <li>
+                            <a data-lang="footera7" href="mira.html#pricing" class="footer__link">Pricing</a>
+                        </li>
+                        <li>
+                            <a data-lang="footera8" href="mira.html#transformation" class="footer__link">Transformation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Information</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a data-lang="footera4" href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a data-lang="footera5" href="about.html#faqs" class="footer__link">Faqs</a>
+                        </li>
+                        <li>
+                            <a data-lang="footera7" href="#testimonial" class="footer__link">Testimonials</a>
+                        </li>
+                        <li>
+                            <a data-lang="footera8" href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact Us</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=+905524739533"class="footer__social-link"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:mohamedalrmally@gmail.com" class="footer__social-link"><i class="fa-solid fa-envelope"></i></a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__group">
+            <ul class="footer__socail">
+                <li>
+                    <a href="tiktok.com/@miraspor/video/7121232842205449473?_r=1&_t=8hi2ES3JiNi" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mirasporr/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.snapchat.com/add/mirasporr?invite_id=ujKRHhSG&locale=ar_JO&share_id=7mqIk1v_R7q5CLV_vwliYA&sid=17c78d2ebe8c4f31b37e5c526c9e4ba8" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-square-snapchat"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@miraspor7308" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <span class="footer__copy">
+                &#169; copyright <a href="https://api.whatsapp.com/send?phone=+201005718132">moalrmaly</a>. All rights reserved
+            </span>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <div class="loader"></div>
+
+
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <!-- JavaScript -->
+   <script src="js/form.js"></script>
+   <script src="js/mira.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+   <!-- scrolll animation -->
+   <script>
+     AOS.init({
+       offset:200,
+       duration: 1500
+     });
+   </script>
+</body>
+</html>
