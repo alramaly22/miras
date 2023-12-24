@@ -262,10 +262,7 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
 // window.addEventListener('scroll', scrollActive)
 
 
-// var loader =document.getElementById("preloader");
-// window.addEventListener("load", function() {
-//   loader.style.display ="none";
-// })
+
 
 
 
@@ -360,3 +357,8 @@ const toggleItem =(item)=>{
     }
  
 }
+
+var loader =document.getElementById("preloader");
+window.addEventListener("load", function() {
+  loader.style.display ="none";
+})
