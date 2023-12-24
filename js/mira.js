@@ -211,7 +211,10 @@ let swiperFavorite = new Swiper('.favorite__swiper', {
     768:{
       slidesPerView:4,
     }
-  }
+  },
+  autoplay: {
+    delay: 4000, // تحديد مدة زمنية بالميللي ثانية، هنا تم تحديدها لتكون 4 ثواني
+  },
 });
 
 /*=============== Testimonial ===============*/
@@ -259,7 +262,10 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
 // window.addEventListener('scroll', scrollActive)
 
 
-
+// var loader =document.getElementById("preloader");
+// window.addEventListener("load", function() {
+//   loader.style.display ="none";
+// })
 
 
 
@@ -354,8 +360,3 @@ const toggleItem =(item)=>{
     }
  
 }
-
-var loader =document.getElementById("preloader");
-window.addEventListener("load", function() {
-  loader.style.display ="none";
-})
