@@ -52,37 +52,37 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="fa-solid fa-house"></i>
-                            <span>Home</span>
+                            <span data-lang="navhome">Home</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#about" class="nav__link active-link">
+                        <a href="about.html" class="nav__link ">
                             <i class="fa-solid fa-address-card"></i>
-                            <span>About</span>
+                            <span data-lang="navabout">About</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#Course" class="nav__link">
+                        <a href="#Course" class="nav__link">
                             <i class="fa-solid fa-dumbbell"></i>
-                            <span>Course</span>
+                            <span data-lang="navcourse">Course</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#pricing" class="nav__link">
+                        <a href="#pricing" class="nav__link">
                             <i class="fa-solid fa-dollar-sign"></i>
-                            <span>Pricing</span>
+                            <span data-lang="navpricing">Pricing</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#transformation" class="nav__link">
+                        <a href="#transformation" class="nav__link">
                             <i class="fa-solid fa-child-reaching"></i>
-                            <span>Transformation</span>
+                            <span data-lang="navtransformation">Transformation</span>
                         </a>
 
                     </li>
@@ -110,94 +110,7 @@
 
 
     <!-- login -->
-    <div class="login grid" id="login-content">
-        <form  action="" class="login__form " id="msform">
-            <ul id="progressbar">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-            </ul>
-            <!-- fieldsets -->
-            <fieldset>
-                <h2 class="fs-title">Question 1</h2>
-                <h3 class="fs-subtitle">What do you consider your main strengths to be?</h3>
-            <!--<p class="help-block">List your strengths here.</p>-->
-            <textarea class="form-control" name="CAT_Custom_1" id="CAT_Custom_1" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="next" class="next button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 2</h2>
-                <h3 class="fs-subtitle">What do your colleagues consider your main strengths to be?</h3>
-        <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous button" value="Previous" />
-                <input type="button" name="next" class="next button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 3</h2>
-                <h3 class="fs-subtitle">What have been your main achievements?</h3>
-        <textarea class="form-control" name="CAT_Custom_3" id="CAT_Custom_3" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous button" value="Previous" />
-                <input type="button" name="next" class="next button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 4</h2>
-                <h3 class="fs-subtitle">What do you consider your main weaknesses to be?</h3>
-        <textarea class="form-control" name="CAT_Custom_4" id="CAT_Custom_4" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 5</h2>
-                <h3 class="fs-subtitle">What do your colleagues consider your main weaknesses to be?</h3>
-        <textarea class="form-control" name="CAT_Custom_5" id="CAT_Custom_5" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 6</h2>
-                <h3 class="fs-subtitle">In what areas would you like to improve your clinical skills?</h3>
-        <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 7</h2>
-                <h3 class="fs-subtitle">In what areas would you like to improve your non-clinical skills?</h3>
-        <textarea class="form-control" name="CAT_Custom_7" id="CAT_Custom_7" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 8</h2>
-                <h3 class="fs-subtitle">Are there any specific areas of compliance training that you need to complete?</h3>
-        <textarea class="form-control" name="CAT_Custom_8" id="CAT_Custom_8" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 9</h2>
-                <h3 class="fs-subtitle">What postgraduate qualifications do you hold?</h3>
-        <textarea class="form-control" name="CAT_Custom_9" id="CAT_Custom_9" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Question 10</h2>
-                <h3 class="fs-subtitle">What postgraduate qualifications or training do you wish to obtain?</h3>
-        <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            </fieldset>
-        </form>
-        <i class="fa-solid fa-xmark login__close" id="login-close"></i>
-    </div>
+
 
 
 
@@ -214,19 +127,18 @@
                     <i class="fa-solid fa-medal"></i>
                     <i class="fa-solid fa-medal"></i>
                     <i class="fa-solid fa-medal"></i>
-
                 </div>
-                <h1 class="home2__title">
-                    Do It For You <br>
-                    I Will Help You<br>
-                    To Be Stronger
+                <h1   class="home2__title">
+                    <p  data-lang="homeh1p1">Do It For You</p> <br>
+                    <p style="margin-top: -2.5rem;" data-lang="homeh1p2">I Will Help You</p><br>
+                    <p style="margin-top: -2.5rem;" data-lang="homeh1p3">To Be Stronger</p>
                 </h1>
                 <!-- <h3 class="home__price">
                     $620
                 </h3> -->
             </div>
-            <a style="padding: 1rem 7rem;" href="#" class="button">
-                Get Start<i class="fa-solid fa-arrow-right"></i>
+            <a style="padding: 1rem 7rem;" href="pricing.html" class="button">
+                <p data-lang="homebutton2">Get Start</p><i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
         <div class="home2__images">
@@ -267,8 +179,8 @@
       <section class="section about " id="about" data-aos="fade-left">
         <div class="about__container container grid">
             <div class="about__data">
-                <h2 class="section__title about__title">About MiraSpor</h2>
-                <p class="about__description">I used to suffer from eating disorders, I used to struggle with my body image and hate my body and myself. When I was younger I used to be bullied so my confidence used to be very low. I used to hate anyone who wanted to take pictures of myself and I never liked cameras! I used to be very timid and nerdy. When I started the gym, I wasn’t doing it to look in a certain way, I was doing it to completely transform myself, become more confident, feel stronger and powerful.
+                <h2 data-lang="about2" class="section__title about__title">About MiraSpor</h2>
+                <p data-lang="aboutp2" class="about__description">I used to suffer from eating disorders, I used to struggle with my body image and hate my body and myself. When I was younger I used to be bullied so my confidence used to be very low. I used to hate anyone who wanted to take pictures of myself and I never liked cameras! I used to be very timid and nerdy. When I started the gym, I wasn’t doing it to look in a certain way, I was doing it to completely transform myself, become more confident, feel stronger and powerful.
                 </p>
                 <!-- <a href="#" class="button">Know more <i class="fa-solid fa-arrow-right"></i></a> -->
             </div>
@@ -281,7 +193,7 @@
 
       <!--==================== project ====================-->
 <section class="projects section" id="projects">
-    <h2 class="section__title">My Youtube Channel</h2>
+    <h2 data-lang="youtube" class="section__title">My Youtube Channel</h2>
 
 
 <div class="container">
@@ -291,7 +203,7 @@
                 <iframe class="projects__img" width="560" height="315" src="https://www.youtube.com/embed/UrUVGYvsBlc?si=ivPDYwG_UhMYP8uy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            <div>
                 
                 <a href="https://www.youtube.com/@miraspor7308" class="projects__button button">
-                    See More <i class="fa-solid fa-arrow-right"></i>
+                    <p data-lang="youtubebutton">See More</p>
                 </a>
             </div>
             </div>
@@ -300,7 +212,7 @@
             <div>
                 
                 <a href="https://www.youtube.com/@miraspor7308" class="projects__button button">
-                    See More <i class="fa-solid fa-arrow-right"></i>
+                    <p data-lang="youtubebutton">See More</p>
                 </a>
             </div>
             </div>
@@ -310,7 +222,7 @@
                 <div>
                 
                 <a href="https://www.youtube.com/@miraspor7308" class="projects__button button">
-                    See More <i class="fa-solid fa-arrow-right"></i>
+                    <p data-lang="youtubebutton">See More </p>
                 </a>
             </div>
             </div>
@@ -319,7 +231,7 @@
                 <iframe class="projects__img" width="560" height="315" src="https://www.youtube.com/embed/C8uqPPhyqiU?si=z2bILop7fMpnQ_i1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <div>
                 
                 <a href="https://www.youtube.com/@miraspor7308" class="projects__button button">
-                    See More <i class="fa-solid fa-arrow-right"></i>
+                    <p data-lang="youtubebutton">See More</p>
                 </a>
             </div>
             </div>
@@ -504,24 +416,24 @@
 
            <!--==================== POPULAR ====================-->
            <section class="testimonial section" id="testimonial" data-aos="fade-left">
-            <span class="section__subtitle">Clients' Feedback</span>
-            <h2 class="section__title">Testimonials</h2>
+            <!-- <span data-lang="testimonialspan" class="section__subtitle">Clients' Feedback</span> -->
+            <h2 data-lang="testimonialh2" class="section__title">Testimonials</h2>
             <div class="testimonial__container container swiper">
                 <div class="swiper-wrapper">
                     <div class="testimonial__card swiper-slide">
                         <img src="images/client1_2_11zon.webp" alt="" class="testimonial__img">
-                        <h3 class="testimonial__name">Sarah Johnson</h3>
-                        <p class="testimonial__description">Joining was a game-changer! Achieved fitness goals with personalized guidance and remarkable trainer support. The encouraging community made sharing my journey truly rewarding.</p>
+                        <h3 data-lang="testimonialname1" class="testimonial__name">Sarah Johnson</h3>
+                        <p data-lang="testimonialp1" class="testimonial__description">Joining was a game-changer! Achieved fitness goals with personalized guidance and remarkable trainer support. The encouraging community made sharing my journey truly rewarding.</p>
                     </div>
                     <div class="testimonial__card swiper-slide">
                         <img src="images/client3_3_11zon.webp" alt="" class="testimonial__img">
-                        <h3 class="testimonial__name">Alex Rodriguez</h3>
-                        <p class="testimonial__description">Transformative experience with great trainers. Your story matters here. Join, share, and let's empower each other!</p>
+                        <h3 data-lang="testimonialname2" class="testimonial__name">Alex Rodriguez</h3>
+                        <p data-lang="testimonialp2" class="testimonial__description">Transformative experience with great trainers. Your story matters here. Join, share, and let's empower each other!</p>
                     </div>
                     <div class="testimonial__card swiper-slide">
                         <img src="images/feed4_4_11zon.webp" alt="" class="testimonial__img">
-                        <h3 class="testimonial__name">Emily Thompson</h3>
-                        <p class="testimonial__description">One of the best decisions. Unparalleled support and inspiration. Don't miss out—join us and share your achievements!</p>
+                        <h3 data-lang="testimonialname3" class="testimonial__name">Emily Thompson</h3>
+                        <p data-lang="testimonialp3" class="testimonial__description">One of the best decisions. Unparalleled support and inspiration. Don't miss out—join us and share your achievements!</p>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -529,20 +441,20 @@
         </section>
         
 
-   <!--==================== Form 2====================-->
-   <section class="contact section" id="contact">
+  <!--==================== Form 2====================-->
+  <section class="contact section" id="contact"  data-aos="fade-right">
     <!-- <span class="section__title">Get In Touch</span> -->
-    <h2 style="color: white;" class="section__title">Contact Me</h2>
+    <h2 data-lang="contactcontactme" style="color: white;" class="section__title">Contact Me</h2>
 
-    <div class="contact__container container grid" data-aos="fade-right">
-        <div style="display: none;" class="contact__content">
-            <h3 class="conact__title">Talk to me</h3>
+    <div class="contact__container container grid">
+        <!-- <div style="display: none;" class="contact__content">
+            <h3 data-lang="footerlinks" class="conact__title">Talk to me</h3>
             <div class="contact__info">
                 <div class="contact__card">
                     <i class="fa-regular fa-circle-check contact__card-icon"></i>
-                    <h3 class="contact__card-title">Email</h3>
-                    <span class="contact__card-data">user@gmail.com</span>
-                    <a href="#" target="_blank" class="contact__button">
+                    <h3 data-lang="footerlinks" class="contact__card-title">Email</h3>
+                    <span data-lang="footerlinks" class="contact__card-data">user@gmail.com</span>
+                    <a href="#" target="_blank" class="contact__button" >
                         write me<i class="fa-solid fa-angle-right contact__button-icon"></i>
                     </a>
                 </div>
@@ -563,24 +475,24 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="contact__content">
-            <h3 style="color: white;" class="conact__title">Write me your Questions</h3>
+            <h3 data-lang="conatctwrite" style="color: white;" class="conact__title">Write me your Questions</h3>
             <form action="" class="contact__form">
                 <div class="contact__form-div">
-                    <label for="" class="contact__form-tag">Names</label>
+                    <label data-lang="contactusername" for="" class="contact__form-tag">Names</label>
                     <input type="text" placeholder="Insert Your Name" name="" id="" class="contact__form-input">
                 </div>
                 <div class="contact__form-div">
-                    <label for="" class="contact__form-tag">Mail</label>
+                    <label data-lang="contactemail" for="" class="contact__form-tag">Mail</label>
                     <input type="email" placeholder="Insert Your email" name="" id="" class="contact__form-input">
                 </div>
                 <div class="contact__form-div contact__form-area">
-                    <label for="" class="contact__form-tag">Project</label>
+                    <label data-lang="contactmessage" for="" class="contact__form-tag">Message</label>
 <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input"></textarea>
                 </div>
 
-                <button class="button">Send Message</button>
+                <button data-lang="contactbutton" class="button">Send Message</button>
             </form>
         </div>
     </div>
@@ -595,7 +507,7 @@
         <div class="footer__content grid">
             <div>
                 <a href="index.html" class="footer__logo"><img style="width: 50%;" src="images/LOGO.png" alt=""></a>
-                <p class="footer__description">
+                <p data-lang="footerp" class="footer__description">
                     Do It For You <br>
                     I Will Help You<br>
                     To Be Stronger
@@ -603,10 +515,10 @@
             </div>
             <div class="footer__data grid">
                 <div>
-                    <h3 class="footer__title">Links</h3>
+                    <h3 data-lang="footerlinks" class="footer__title">Links</h3>
                     <ul class="footer__links">
                         <li>
-                            <a data-lang="footera4" href="mira.html#Home" class="footer__link">Home</a>
+                            <a  data-lang="footera6" href="mira.html#Home" class="footer__link">Home</a>
                         </li>
                         <li>
                             <a data-lang="footera5" href="mira.html#Course" class="footer__link">Courses</a>
@@ -620,24 +532,24 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="footer__title">Information</h3>
+                    <h3 data-lang="footerinformation" class="footer__title">Information</h3>
                     <ul class="footer__links">
                         <li>
-                            <a data-lang="footera4" href="#about" class="footer__link">About</a>
+                            <a data-lang="footera1" href="#about" class="footer__link">About</a>
                         </li>
                         <li>
-                            <a data-lang="footera5" href="about.html#faqs" class="footer__link">Faqs</a>
+                            <a data-lang="footera2" href="#faqs" class="footer__link">Faqs</a>
                         </li>
                         <li>
-                            <a data-lang="footera7" href="#testimonial" class="footer__link">Testimonials</a>
+                            <a data-lang="footera3" href="#testimonial" class="footer__link">Testimonials</a>
                         </li>
                         <li>
-                            <a data-lang="footera8" href="#contact" class="footer__link">Contact</a>
+                            <a data-lang="footera4" href="#contact" class="footer__link">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="footer__title">Contact Us</h3>
+                    <h3 data-lang="footercontact" class="footer__title">Contact Us</h3>
                     <ul class="footer__links">
                         <li>
                             <a href="https://api.whatsapp.com/send?phone=+905524739533"class="footer__social-link"><i class="fa-brands fa-square-whatsapp"></i></a>
@@ -679,12 +591,10 @@
         </div>
     </div>
 </footer>
-
-
-
-
-
-    <div class="loader"></div>
+          <!--==================== scrollup ====================-->
+          <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
 
 
 
@@ -695,8 +605,9 @@
    <script src="js/swiper-bundle.min.js"></script>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <!-- JavaScript -->
-   <script src="js/form.js"></script>
+   <!-- <script src="js/form.js"></script> -->
    <script src="js/mira.js"></script>
+   <script src="js/language.js"></script>
 
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
