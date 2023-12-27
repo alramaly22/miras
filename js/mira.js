@@ -200,6 +200,14 @@ let swiperProjects = new Swiper(".projects__container", {
  },
 });
 
+/*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 /*=============== SWIPER POPULAR ===============*/
 
 let swiperFavorite = new Swiper('.favorite__swiper', {
@@ -227,7 +235,7 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     clickable: true,
   },
   autoplay: {
-    delay: 4000, // تحديد مدة زمنية بالميللي ثانية، هنا تم تحديدها لتكون 4 ثواني
+    delay: 3000, // تحديد مدة زمنية بالميللي ثانية، هنا تم تحديدها لتكون 4 ثواني
   },
   breakpoints: {
     576: {
@@ -266,46 +274,46 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const counterSection = document.getElementById("counter-section");
-//   const happyUsers = document.getElementById("happy-users");
-//   const followers = document.getElementById("followers");
-//   const experience = document.getElementById("experience");
+document.addEventListener("DOMContentLoaded", function () {
+  const counterSection = document.getElementById("counter-section");
+  const happyUsers = document.getElementById("happy-users");
+  const followers = document.getElementById("followers");
+  const experience = document.getElementById("experience");
 
-//   // Set your target numbers
-//   const targetHappyUsers = 100;
-//   const targetFollowers = 20;
-//   const targetExperience = 5;
+  // Set your target numbers
+  const targetHappyUsers = 20;
+  const targetFollowers = 100;
+  const targetExperience = 5;
 
-//   let counter = 0;
+  let counter = 0;
 
-//   function updateCounter() {
-//       if (counter < targetHappyUsers * 1000) {
-//           counter += 100;
-//           happyUsers.innerText = "+" + counter / 1000;
-//       }
+  function updateCounter() {
+      if (counter < targetHappyUsers * 1000) {
+          counter += 100;
+          happyUsers.innerText = "+" + counter / 1000;
+      }
 
-//       if (counter < targetFollowers * 1000) {
-//           counter += 50;
-//           followers.innerText = "+" + counter / 1000;
-//       }
+      if (counter < targetFollowers * 5000) {
+          counter += 500;
+          followers.innerText = "+" + counter / 1000;
+      }
 
-//       if (counter < targetExperience) {
-//           counter += 1; 
-//           experience.innerText = "+" + counter;
-//       } else if (counter === targetExperience) {
-//           experience.innerText = "+" + counter + "K";
-//       }
+      if (counter < targetExperience) {
+          counter += 1; 
+          experience.innerText = "+" + counter;
+      } else if (counter === targetExperience) {
+          experience.innerText = "+" + counter + "K";
+      }
 
-//       if (counter < targetExperience || counter < targetFollowers * 1000 || counter < targetHappyUsers * 1000) {
-//           requestAnimationFrame(updateCounter);
-//       } else {
-//           counterSection.classList.add("show");
-//       }
-//   }
+      if (counter < targetExperience || counter < targetFollowers * 1000 || counter < targetHappyUsers * 1000) {
+          requestAnimationFrame(updateCounter);
+      } else {
+          counterSection.classList.add("show");
+      }
+  }
 
-//   updateCounter();
-// });
+  updateCounter();
+});
 /*=============== SWIPER HOME2 ===============*/
 const swipeHome2 = new Swiper('.home__swiper', {
   loop: true,
