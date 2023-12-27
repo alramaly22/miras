@@ -6,6 +6,10 @@ let lang = {
         navpricing: "التسعير",
         navtransformation: "التحول",
         
+        navtestimonials: "آراء العملاء",
+        navyoutube: "يوتيوب",
+        navstep: "الخطوات",
+        navcontact: "تواصل",
         homeh1p1: "افعليها من أجلك",
         homeh1p2: "سأساعدك",
         homeh1p3: "لتصبحي أقوى",
@@ -118,6 +122,12 @@ let lang = {
         navcourse:"Course",
         navpricing:"Pricing",
         navtransformation:"Transformation",
+
+        navtestimonials:"Testimonials",
+        navyoutube:"Youtube",
+        navstep:"Steps",
+        navcontact:"Contact",
+
 
         homeh1p1:"Do It For You",
         homeh1p2:"I Will Help You",
