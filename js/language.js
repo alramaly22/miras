@@ -108,7 +108,7 @@ let lang = {
         footerinformation: "المعلومات",
         footera1: "حول",
         footera2: "الأسئلة الشائعة",
-        footera3: "الشهادات",
+        footera3: "آراء عملائنا",
         footera4: "تواصل معنا",
         footercontact: "تواصل معنا",
     },
