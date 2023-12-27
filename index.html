@@ -54,35 +54,35 @@
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
                             <i class="fa-solid fa-house"></i>
-                            <span>Home</span>
+                            <span data-lang="navhome">Home</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
                         <a href="about.html" class="nav__link ">
                             <i class="fa-solid fa-address-card"></i>
-                            <span>About</span>
+                            <span data-lang="navabout">About</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
                         <a href="#Course" class="nav__link">
                             <i class="fa-solid fa-dumbbell"></i>
-                            <span>Course</span>
+                            <span data-lang="navcourse">Course</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
                         <a href="#pricing" class="nav__link">
                             <i class="fa-solid fa-dollar-sign"></i>
-                            <span>Pricing</span>
+                            <span data-lang="navpricing">Pricing</span>
                         </a>
 
                     </li>
                     <li class="nav__item">
                         <a href="#transformation" class="nav__link">
                             <i class="fa-solid fa-child-reaching"></i>
-                            <span>Transformation</span>
+                            <span data-lang="navtransformation">Transformation</span>
                         </a>
 
                     </li>
@@ -110,7 +110,7 @@
 
 
     <!-- login -->
-    <div class="login grid" id="login-content">
+    <!-- <div class="login grid" id="login-content">
         <form  action="" class="login__form " id="msform">
             <ul id="progressbar">
                 <li class="active"></li>
@@ -124,11 +124,9 @@
         <li></li>
         <li></li>
             </ul>
-            <!-- fieldsets -->
             <fieldset>
                 <h2 class="fs-title">Question 1</h2>
                 <h3 class="fs-subtitle">What do you consider your main strengths to be?</h3>
-            <!--<p class="help-block">List your strengths here.</p>-->
             <textarea class="form-control" name="CAT_Custom_1" id="CAT_Custom_1" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <input type="button" name="next" class="next button" value="Next" />
             </fieldset>
@@ -197,7 +195,7 @@
             </fieldset>
         </form>
         <i class="fa-solid fa-xmark login__close" id="login-close"></i>
-    </div>
+    </div> -->
 
 
 
@@ -215,31 +213,33 @@
            
             <div class="home__data">
                 <h1 class="home__title">
-                    DO THIS <div class="home__title-box">
-                        FOR <div>YOU</div>
+                    <p style="color:#979db6;" data-lang="homep1">DO THIS</p> <div class="home__title-box">
+                        <p style="color:#979db6;" data-lang="homep2">FOR</p> <div><p  style="color:#979db6;" data-lang="homep3">YOU</p></div>
                     </div>
                    
                     <!-- <img src="images/star-img.svg" alt=""> -->
                 </h1>
-                <p class="home__description">
-                    How To Be A Stronger Woman From The Inside Out" for a transformative journey in our empowering community
-                                        <img src="images/circle-img.svg" alt="">
+                <p  class="home__description">
+
+<p data-lang="homep">                    How To Be A Stronger Woman From The Inside Out" for a transformative journey in our empowering community
+</p>
+                    <img style="position: relative; width: 2rem; bottom: 0rem; left: 8rem;" src="images/circle-img.svg" alt="">
                 </p>
-                <a href="#" class="button" id="login-button">
-                    Get Start   <i class="fa-solid fa-arrow-right"></i>
+                <a href="pricing.html" class="button" id="login-button">
+                    <p style="color: #fff;"  data-lang="homebutton">Get Start</p><i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <div id="counter-section" class="home__box">
                     <div>
                         <h3 id="happy-users">+20K</h3>
-                        <span>Happy User</span>
+                        <span data-lang="homespan1">Happy User</span>
                     </div>
                     <div>
                         <h3 id="followers">+100K</h3>
-                        <span>Followers</span>
+                        <span data-lang="homespan2">Followers</span>
                     </div>
                     <div>
-                        <h3 id="experience">+5</h3>
-                        <span>Experience</span>
+                        <h3 id="experience">+5Y</h3>
+                        <span data-lang="homespan3">Experience</span>
                     </div>
                 </div>
             </div>
@@ -256,13 +256,13 @@
 
 
       <!--==================== ABOUT ====================-->
-      <section class="section about " id="about" data-aos="fade-left">
+      <section class="section about " id="about">
         <div class="about__container container grid">
             <div class="about__data">
-                <h2 class="section__title about__title">About MiraSpor</h2>
-                <p class="about__description">My Name Is Mira Sporr Do You Want To Have A Great Body Join Me My Name Is Mira Sofia , Born On May 29th, 1997 In The Beautiful Miami, Florida. I Am A Fitness Influencer Who’s Had A Different Start To My Journey Compared To Others. I Had Always Struggled With Being Under-Weight In My Teenage Years. I Sought Out To Fitness To Break Me Out Of This Insecurity That I Struggled With, All Throughout My Adolescence. She Believed She Could. So She Did!
+                <h2 data-lang="abouth2" class="section__title about__title">About MiraSpor</h2>
+                <p data-lang="aboutp" class="about__description">My Name Is Mira Sporr Do You Want To Have A Great Body Join Me My Name Is Mira Sofia , Born On May 29th, 1997 In The Beautiful Miami, Florida. I Am A Fitness Influencer Who’s Had A Different Start To My Journey Compared To Others. I Had Always Struggled With Being Under-Weight In My Teenage Years. I Sought Out To Fitness To Break Me Out Of This Insecurity That I Struggled With, All Throughout My Adolescence. She Believed She Could. So She Did!
                 </p>
-                <a href="about.html" class="button">Know more <i class="fa-solid fa-arrow-right"></i></a>
+                <a  href="about.html" class="button"><p style="color: #fff;"  data-lang="aboutbutton">Know more</p><i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <img src="images/IMG_3398_12_11zon.webp" alt="" class="about__img">
@@ -336,77 +336,43 @@
 
       <!--==================== Courses ====================-->
 
-<section class="services section" id="Course" data-aos="fade-right">
-    <!-- <h3 class="section__subtitle">
-        my <span>services</span>
-    </h3> -->
-    <h2 class="section__title">
+<section class="services section" id="Course">
+    <h2 data-lang="coursesh2" class="section__title">
         Our Courses
     </h2>
     <div class="services__container container grid">
         <article class="services__card bootyarticle">
             <img  src="svg/butt-svgrepo-com.svg" class="services__icon" alt="">
-            <!-- <i class="fa-solid fa-dumbbell services__icon"></i> -->
-       <h2 class="services__title white">
+       <h2 data-lang="coursesh21" class="services__title white">
         Booty Challenge 
             </h2>
-            <p class="services__description white">
+            <p data-lang="coursesp1" class="services__description white">
                 Sculpt, tone, empower! Join for firmer, toned booty. Tailored workouts, community support for a confident you
-                                    </p>
+                </p>
         </article>
-
-        <!-- <article class="services__card">
-            <i class="fa-solid fa-dumbbell services__icon"></i>
-            <h2 class="services__title white">
-                BelleFit Wellness 
-            </h2>
-            <p class="services__description white">
-
-
-                BelleFit: Empowering Women through Fitness, Nutrition, and Community. Strength, Confidence, Wellness Unite </p>
-                    </article> -->
-
         <article class="services__card absarticle">
-            <!-- <i class="fa-solid fa-dumbbell services__icon"></i> -->
             <img src="svg/weight-loss-svgrepo-com (2).svg" class="services__icon" alt="">
-            <h2 class="services__title white">
+            <h2 data-lang="coursesh22" class="services__title white">
                 Abs Tiny Waist 
             </h2>
-            <p class="services__description white">
-                Tiny waist, sculpted abs: Specialized program, tailored workouts, expert guidance. Unlock secrets to a confident, sculpted you                       </p>
+            <p data-lang="coursesp2" class="services__description white">
+                Tiny waist, sculpted abs: Specialized program, tailored workouts, expert guidance. Unlock secrets to a confident, sculpted you 
+            </p>
         </article>
-        <!-- <article class="services__card">
-            <i class="fa-solid fa-dumbbell services__icon"></i>
-            <h2 class="services__title white">
-                
-                Leathercraft 
-            </h2>
-            <p class="services__description white">
-                Explore art, from basics to advanced. Learn pattern-making, stitching, and finish techniques. Create unique goods, unleashing creativity in leather            </p>
-        </article> -->
         <article class="services__card lossarticel">
-            <!-- <i class="fa-solid fa-dumbbell services__icon"></i> -->
             <img  src="svg/weight-loss-svgrepo-com (3).svg" class="services__icon" alt="">
-            <h2 class="services__title white">
+            <h2 data-lang="coursesh23" class="services__title white">
                 Weight Loss 
             </h2>
-            <p class="services__description white">
+            <p data-lang="coursesp3" class="services__description white">
                 Tailored workouts, nutrition guidance, and community support for sustainable weight loss. Achieve your fitness goals today            </p>
         </article>
-        <!-- <article class="services__card">
-            <i class="fa-solid fa-dumbbell services__icon"></i>
-            <h2 class="services__title white">
-                EmpowerHER Fitness
-            </h2>
-            <p class="services__description white">
-                EmpowerHER Fitness: Dynamic workouts, nutrition, and community for women's strength, confidence, and well-being at Acutes Fitness.                        </p>
-        </article> -->
     </div>
 </section>
     
            <!--==================== POPULAR ====================-->
-           <section class="favorite section" id="transformation" data-aos="fade-right">
-            <h2 style="color: #fff;" id="transformationTitle" class="section__title" data-lang="transformation_title">
+           <section class="favorite section" id="transformation">
+            <h2 data-lang="transformation" style="color: #fff;" id="transformationTitle" class="section__title" data-lang="transformation_title">
                 Transformation
             </h2>
               <div class="favorite__container">
@@ -443,137 +409,136 @@
               </div>
            </section>
               <!--==================== pricing ====================-->
-      <section class="pricing section" id="pricing">
-        <div class="container">
-            <div class="section__data">
-                <div class="section__title">
-                    <h1 class="section__title">Our Pricing</h1>
+              <section class="pricing section" id="pricing">
+                <div class="container">
+                    <div class="section__data">
+                        <div class="section__title">
+                            <h1 data-lang="pricingh1" class="section__title">Our Pricing</h1>
+                        </div>
+                    </div>
+                    <div class="pricing__container grid">
+                        <article class="pricing__card gold-article ">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="images/pricing1.png" alt="" class="pricing__img">
+                                </div>
+                                <h1 data-lang="pricingh2" class="pricing__title gold-h3">Booty Challenge</h1>
+                                <h2 data-lang="pricingh3" class="pricing__number">$99</h2>
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga1">8 WorKouts Per Week</p> 
+                                </li>
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga2">Instructional Videos</p>
+                                </li>
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga3">Guidance & Mindset In The Gym</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga4">Progressive Overload</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga5">Q&A About The Guide</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga6">Dietplan & Recipes</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga7">Trainingplan For Every Week</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i> <p style="color: #fff;" data-lang="pricinga8">Support Trough E-mail</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga9">How To Track Calories And Adjust It To Your Goals</p>
+                                </li>
+                            </ul>
+                            <a href="https://iyzi.link/AI_lHg" class="button button__flex pricing__button"><p style="color: #fff;"  data-lang="pricingbutton">Get Start</p><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article class="pricing__card silver-article">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="images/pricing2.png" alt="" class="pricing__img">
+                                </div>
+                                <h1 data-lang="pricingh4" class="pricing__title silver-3">Abs Tiny Waist
+                                </h1>
+                                <h2 data-lang="pricingh5" class="pricing__number">$99</h2>
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga1">8 WorKouts Per Week</p> 
+                                </li>
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga2">Instructional Videos</p>
+                                </li>
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga3">Guidance & Mindset In The Gym</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga4">Progressive Overload</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga5">Q&A About The Guide</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga6">Dietplan & Recipes</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga7">Trainingplan For Every Week</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i> <p style="color: #fff;" data-lang="pricinga8">Support Trough E-mail</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga9">How To Track Calories And Adjust It To Your Goals</p>
+                                </li>
+                            </ul>
+                            <a href="https://iyzi.link/AI_lHg" class="button button__flex pricing__button"><p style="color: #fff;"  data-lang="pricingbutton">Get Start</p><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article class="pricing__card bronze-article">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="images/pricing3.png" alt="" class="pricing__img">
+                                </div>
+                                <h1 data-lang="pricingh6" class="pricing__title bronze-h3">Weight Loss
+                                </h1>
+                                <h2 data-lang="pricngh7" class="pricing__number">$99</h2>
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga1">8 WorKouts Per Week</p> 
+                                </li>
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga2">Instructional Videos</p>
+                                </li>
+                                <li class="pricing__item">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga3">Guidance & Mindset In The Gym</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga4">Progressive Overload</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga5">Q&A About The Guide</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga6">Dietplan & Recipes</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga7">Trainingplan For Every Week</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i> <p style="color: #fff;" data-lang="pricinga8">Support Trough E-mail</p>
+                                </li>
+                                <li class="pricing__item ">
+                                    <i class="fa-regular fa-circle-check"></i><p style="color: #fff;" data-lang="pricinga9">How To Track Calories And Adjust It To Your Goals</p>
+                                </li>
+                            </ul>
+                            <a href="https://iyzi.link/AI_lHg" class="button button__flex pricing__button"><p style="color: #fff;"  data-lang="pricingbutton">Get Start</p><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                    </div>
                 </div>
-            </div>
-            <div class="pricing__container grid">
-                <article class="pricing__card pricing__card-active gold-article "  data-aos="fade-right">
-                    <header class="pricing__header">
-                        <div class="pricing__shape">
-                            <img src="images/pricing1.png" alt="" class="pricing__img">
-                        </div>
-                        <h1 class="pricing__title gold-h3">Booty Challenge</h1>
-                        <h2 class="pricing__number">$99</h2>
-                    </header>
-                    <ul class="pricing__list">
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-fire-flame-curved"></i>8 WorKouts Per Week 
-                        </li>
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-medal"></i>Instructional Videos
-                        </li>
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-heart"></i>Guidance & Mindset In The Gym
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-heart"></i>Progressive Overload
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>Q&a About The Guide
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-solid fa-gift"></i>Dietplan & Recipes
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-solid fa-sun"></i>Trainingplan For Every Week
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>Support Trough E-mail
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>How To Track Calories And Adjust It To Your Goals
-                        </li>
-                    </ul>
-                    <a href="#" class="button button__flex pricing__button">Get Start<i class="fa-solid fa-arrow-right"></i></a>
-                </article>
-                <article class="pricing__card pricing__card-active silver-article "  data-aos="fade-left">
-                    <header class="pricing__header">
-                        <div class="pricing__shape">
-                            <img src="images/pricing2.png" alt="" class="pricing__img">
-                        </div>
-                        <h1 class="pricing__title silver-3">Abs Tiny Waist
-                        </h1>
-                        <h2 class="pricing__number">$99</h2>
-                    </header>
-                    <ul class="pricing__list">
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-fire-flame-curved"></i>8 WorKouts Per Week 
-                        </li>
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-medal"></i>Instructional Videos
-                        </li>
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-heart"></i>Guidance & Mindset In The Gym
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-heart"></i>Progressive Overload
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>Q&a About The Guide
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-solid fa-gift"></i>Dietplan & Recipes
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-solid fa-sun"></i>Trainingplan For Every Week
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>Support Trough E-mail
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>How To Track Calories And Adjust It To Your Goals
-                        </li>
-                    </ul>
-                    <a href="#" class="button button__flex pricing__button">Get Start<i class="fa-solid fa-arrow-right"></i></a>
-                </article>
-                <article class="pricing__card pricing__card-active bronze-article"  data-aos="fade-right">
-                    <header class="pricing__header">
-                        <div class="pricing__shape">
-                            <img src="images/pricing3.png" alt="" class="pricing__img">
-                        </div>
-                        <h1 class="pricing__title bronze-h3">Weight Loss
-                        </h1>
-                        <h2 class="pricing__number">$99</h2>
-                    </header>
-                    <ul class="pricing__list">
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-fire-flame-curved"></i>8 WorKouts Per Week 
-                        </li>
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-medal"></i>Instructional Videos
-                        </li>
-                        <li class="pricing__item">
-                            <i class="fa-solid fa-heart"></i>Guidance & Mindset In The Gym
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-heart"></i>Progressive Overload
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>Q&a About The Guide
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-solid fa-gift"></i>Dietplan & Recipes
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-solid fa-sun"></i>Trainingplan For Every Week
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>Support Trough E-mail
-                        </li>
-                        <li class="pricing__item ">
-                            <i class="fa-regular fa-circle-check"></i>How To Track Calories And Adjust It To Your Goals
-                        </li>
-                    </ul>
-                    <a href="#" class="button button__flex pricing__button">Get Start<i class="fa-solid fa-arrow-right"></i></a>
-                </article>
-            </div>
-        </div>
-    </section>
-
+            </section>
   
            <!--==================== POPULAR ====================-->
            <!-- <section class="testimonial section" id="testimonial">
@@ -603,19 +568,19 @@
         
 
    <!--==================== Form 2====================-->
-   <section class="contact section" id="contact"  data-aos="fade-right">
+   <section class="contact section" id="contact">
     <!-- <span class="section__title">Get In Touch</span> -->
-    <h2 style="color: white;" class="section__title">Contact Me</h2>
+    <h2 data-lang="contactcontactme" style="color: white;" class="section__title">Contact Me</h2>
 
     <div class="contact__container container grid">
-        <div style="display: none;" class="contact__content">
-            <h3 class="conact__title">Talk to me</h3>
+        <!-- <div style="display: none;" class="contact__content">
+            <h3 data-lang="footerlinks" class="conact__title">Talk to me</h3>
             <div class="contact__info">
                 <div class="contact__card">
                     <i class="fa-regular fa-circle-check contact__card-icon"></i>
-                    <h3 class="contact__card-title">Email</h3>
-                    <span class="contact__card-data">user@gmail.com</span>
-                    <a href="#" target="_blank" class="contact__button">
+                    <h3 data-lang="footerlinks" class="contact__card-title">Email</h3>
+                    <span data-lang="footerlinks" class="contact__card-data">user@gmail.com</span>
+                    <a href="#" target="_blank" class="contact__button" >
                         write me<i class="fa-solid fa-angle-right contact__button-icon"></i>
                     </a>
                 </div>
@@ -636,24 +601,24 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="contact__content">
-            <h3 style="color: white;" class="conact__title">Write me your Questions</h3>
+            <h3 data-lang="conatctwrite" style="color: white;" class="conact__title">Write me your Questions</h3>
             <form action="" class="contact__form">
                 <div class="contact__form-div">
-                    <label for="" class="contact__form-tag">Names</label>
+                    <label data-lang="contactusername" for="" class="contact__form-tag">Names</label>
                     <input type="text" placeholder="Insert Your Name" name="" id="" class="contact__form-input">
                 </div>
                 <div class="contact__form-div">
-                    <label for="" class="contact__form-tag">Mail</label>
+                    <label data-lang="contactemail" for="" class="contact__form-tag">Mail</label>
                     <input type="email" placeholder="Insert Your email" name="" id="" class="contact__form-input">
                 </div>
                 <div class="contact__form-div contact__form-area">
-                    <label for="" class="contact__form-tag">Project</label>
+                    <label data-lang="contactmessage" for="" class="contact__form-tag">Message</label>
 <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input"></textarea>
                 </div>
 
-                <button class="button">Send Message</button>
+                <button data-lang="contactbutton" class="button">Send Message</button>
             </form>
         </div>
     </div>
@@ -668,7 +633,7 @@
         <div class="footer__content grid">
             <div>
                 <a href="#" class="footer__logo"><img style="width: 50%;" src="images/LOGO.png" alt=""></a>
-                <p class="footer__description">
+                <p data-lang="footerp" class="footer__description">
                     Do It For You <br>
                     I Will Help You<br>
                     To Be Stronger
@@ -676,10 +641,10 @@
             </div>
             <div class="footer__data grid">
                 <div>
-                    <h3 class="footer__title">Links</h3>
+                    <h3 data-lang="footerlinks" class="footer__title">Links</h3>
                     <ul class="footer__links">
                         <li>
-                            <a data-lang="footera4" href="#Home" class="footer__link">Home</a>
+                            <a data-lang="footera6" href="#Home" class="footer__link">Home</a>
                         </li>
                         <li>
                             <a data-lang="footera5" href="#Course" class="footer__link">Courses</a>
@@ -693,24 +658,24 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="footer__title">Information</h3>
+                    <h3 data-lang="footerinformation" class="footer__title">Information</h3>
                     <ul class="footer__links">
                         <li>
-                            <a data-lang="footera4" href="#about" class="footer__link">About</a>
+                            <a data-lang="footera1" href="about.html" class="footer__link">About</a>
                         </li>
                         <li>
-                            <a data-lang="footera5" href="about.html" class="footer__link">Faqs</a>
+                            <a data-lang="footera2" href="about.html#faqs" class="footer__link">Faqs</a>
                         </li>
                         <li>
-                            <a data-lang="footera7" href="about.html#testimonial" class="footer__link">Testimonials</a>
+                            <a data-lang="footera3" href="about.html#testimonial" class="footer__link">Testimonials</a>
                         </li>
                         <li>
-                            <a data-lang="footera8" href="#contact" class="footer__link">Contact</a>
+                            <a data-lang="footera4" href="#contact" class="footer__link">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="footer__title">Contact Us</h3>
+                    <h3 data-lang="footercontact" class="footer__title">Contact Us</h3>
                     <ul class="footer__links">
                         <li>
                             <a href="https://api.whatsapp.com/send?phone=+905524739533"class="footer__social-link"><i class="fa-brands fa-square-whatsapp"></i></a>
@@ -753,12 +718,10 @@
     </div>
 </footer>
 
-
-
-
-
-    <div class="loader"></div>
-
+          <!--==================== scrollup ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
 
 
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -768,8 +731,9 @@
    <script src="js/swiper-bundle.min.js"></script>
    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
    <!-- JavaScript -->
-   <script src="js/form.js"></script>
+   <!-- <script src="js/form.js"></script> -->
    <script src="js/mira.js"></script>
+   <script src="js/language.js"></script>
 
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
