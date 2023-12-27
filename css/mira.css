@@ -848,7 +848,7 @@ video {
   .home__box{
     display: flex;
     justify-content: center;
-    column-gap:1.8rem;
+    column-gap:1.2rem;
     margin-top: 2rem;
   }
   .home__box h3 {
@@ -1395,7 +1395,7 @@ color: rebeccapurple;
   font-size: var(--small-font-size);
 }
 /*=============== Scroll Bar ===============*/
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   width: 0.6rem;
   border-radius: .5rem;
   background-color: hsla(230,16%,85%);
@@ -1406,7 +1406,7 @@ color: rebeccapurple;
 }
 ::-webkit-scrollbar-thumb:hover{
   background-color: hsla(230,16%,55%);
-}
+} */
 /*=============== Scroll Up ===============*/
 
 
